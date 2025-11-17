@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ali El Hawli Game Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Ali El Rida El Hawli – Game Developer specialising in Unity and Unreal Engine."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- === SITE WRAPPER === -->
+  <div class="page-wrapper">
+
+    <!-- === HEADER / NAVBAR === -->
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Ali El Hawli</span>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-link" data-nav-target="home">Home</button>
+        <button class="nav-link" data-nav-target="projects">Projects</button>
+        <button class="nav-link" data-nav-target="about">About</button>
+        <button class="nav-link" data-nav-target="contact">Contact</button>
+      </nav>
+    </header>
+
+    <!-- === MAIN CONTENT === -->
+    <main>
+      <!-- === HOME / HERO SECTION === -->
+      <section id="home" class="section section--active">
+        <div class="hero">
+          <div class="hero-text">
+            <p class="hero-kicker">Game Developer · AI & Gameplay</p>
+            <h1 class="hero-title">Hi, I’m Ali.</h1>
+            <p class="hero-subtitle">
+              I design and build games using <strong>Unity</strong> and
+              <strong>Unreal Engine</strong>, with a focus on
+              gameplay, AI, and player experience.
+            </p>
+
+            <div class="hero-tags">
+              <span class="tag">Unity · C#</span>
+              <span class="tag">Unreal · C++</span>
+              <span class="tag">AI for Games</span>
+              <span class="tag">Game Design</span>
+            </div>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-nav-target="projects">
+                View Projects
+              </button>
+              <button class="btn btn-ghost" data-nav-target="about">
+                About Me
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-highlight">
+            <h2 class="hero-highlight-title">Current Focus</h2>
+            <ul class="hero-highlight-list">
+              <li>Unity &amp; Unreal portfolio pieces</li>
+              <li>AI-driven gameplay (FSM, GOAP, pathfinding)</li>
+              <li>Horror & FPS prototypes</li>
+              <li>Preparing for game dev roles in Australia</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- === PROJECTS SECTION === -->
+      <section id="projects" class="section">
+        <header class="section-header">
+          <h2>Projects</h2>
+          <p>
+            A selection of my Unity and Unreal Engine projects. This section is
+            data-driven – adding a new project is as simple as updating
+            <code>projects</code> in <strong>script.js</strong>.
+          </p>
+        </header>
+
+        <!-- FILTER BAR -->
+        <div class="projects-controls">
+          <div class="filter-group">
+            <span class="filter-label">Filter by engine:</span>
+            <button class="filter-btn filter-btn--active" data-filter="all">
+              All
+            </button>
+            <button class="filter-btn" data-filter="Unity">
+              Unity
+            </button>
+            <button class="filter-btn" data-filter="Unreal">
+              Unreal
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT GRID (POPULATED BY JS) -->
+        <div id="projects-grid" class="projects-grid">
+          <!-- Cards will be injected here by script.js -->
+        </div>
+      </section>
+
+      <!-- === ABOUT SECTION === -->
+      <section id="about" class="section">
+        <header class="section-header">
+          <h2>About Me</h2>
+        </header>
+
+        <div class="about-layout">
+          <div class="about-main">
+            <p>
+              I’m <strong>Ali Al Rida El Hawli</strong>, a game developer based in
+              Melbourne, Australia, currently studying Games &amp; Interactivity /
+              Computer Science (Game Development) at Swinburne University.
+            </p>
+            <p>
+              I specialise in designing and implementing gameplay systems, AI,
+              and level interactions using <strong>Unity (C#)</strong> and
+              <strong>Unreal Engine (C++)</strong>. I enjoy building prototypes
+              that explore player agency, horror tension, and systemic game
+              mechanics.
+            </p>
+            <p>
+              My work includes AI-driven horror maze games, FPS movement and
+              parkour, narrative-driven interactive stories, and board game
+              designs. I’m always iterating on my tools and workflows to make
+              future projects easier to build and maintain.
+            </p>
+          </div>
+
+          <aside class="about-aside">
+            <h3>Skills</h3>
+            <ul class="pill-list">
+              <li>Unity · C#</li>
+              <li>Unreal Engine · C++</li>
+              <li>Gameplay Programming</li>
+              <li>AI for Games (FSM, A*, GOAP)</li>
+              <li>Level Design & Prototyping</li>
+              <li>Version Control (Git, GitHub)</li>
+            </ul>
+
+            <h3>Tools</h3>
+            <ul class="pill-list pill-list--secondary">
+              <li>Rider / Visual Studio</li>
+              <li>Unity Editor</li>
+              <li>Unreal Engine 5</li>
+              <li>Plastic SCM / GitHub</li>
+              <li>Blender / Maya (for basic assets)</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- === CONTACT SECTION === -->
+      <section id="contact" class="section">
+        <header class="section-header">
+          <h2>Contact</h2>
+        </header>
+
+        <div class="contact-layout">
+          <div class="contact-text">
+            <p>
+              I’m open to internship and junior game development opportunities,
+              especially roles involving gameplay, tools, or AI.
+            </p>
+            <p>
+              The best way to reach me is via email. You can also connect with
+              me on GitHub or itch.io to see more of my work.
+            </p>
+          </div>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <h3>Email</h3>
+              <a href="mailto:your.email@example.com">
+                your.email@example.com
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <h3>GitHub</h3>
+              <a href="https://github.com/your-github" target="_blank" rel="noreferrer">
+                github.com/your-github
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <h3>itch.io</h3>
+              <a href="https://your-itch-username.itch.io" target="_blank" rel="noreferrer">
+                your-itch-username.itch.io
+              </a>
+            </div>
+
+            <!-- Optional: LinkedIn -->
+            <div class="contact-card">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">
+                linkedin.com/in/your-linkedin
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Ali Al Rida El Hawli · Built with HTML, CSS &amp; JavaScript
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
